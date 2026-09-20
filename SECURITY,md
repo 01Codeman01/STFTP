@@ -1,0 +1,39 @@
+# Security Policy - STFTP Industrial
+
+## Verified Implementation
+- Commit: 99c126e
+- Test Vector: 11 blocks / 5500 bytes / SHA256 VERIFIED
+- Overhead: +60 bytes per packet
+- Encryption: AES-256-GCM (authenticated encryption)
+- Integrity: SHA256 HMAC
+
+## Security Assumptions
+
+### 1. PSK Provisioning
+- PSK MUST be 32 bytes (256-bit) random: `openssl rand -hex 32`
+- PSK MUST be provisioned out-of-band (secure console, HSM, USB)
+- NEVER hardcode PSK in public repository or firmware
+- Each deployment MUST use unique PSK
+
+### 2. Nonce Management
+- Nonce MUST be 12 bytes: 4 random + 8 monotonic counter
+- Nonce MUST NEVER repeat for same PSK
+- Counter MUST persist in NVS/Flash across reboots
+- Abort on counter overflow
+
+### 3. Threat Model
+Protects against: eavesdropping, tampering, replay, packet injection
+Does NOT protect against: compromised PSK, physical access, weak RNG, DoS
+
+### 4. Secure Deployment Checklist
+- [ ] PSK generated with CSPRNG
+- [ ] PSK stored in encrypted NVS
+- [ ] Nonce persistence tested (10x power cycle)
+- [ ] Wireshark confirms no cleartext
+- [ ] Firewall restricts UDP port
+
+## Reporting a Vulnerability
+DO NOT open a public issue.
+Use GitHub Security Advisories (private). Response within 48h.
+
+Built in Texas + Jalisco | github.com/01Codeman01/STFTP
