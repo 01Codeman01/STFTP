@@ -21,3 +21,7 @@ See LICENSE_COMMERCIAL.md
 
 📍 **Origin**
 Built in Guadalajara, Jalisco & Texas — Engineered for nearshoring, deployed worldwide.
+
+## Limitations / Disclaimer
+This project does NOT claim to be unhackable or inhackable.
+STFTP mitigates cleartext TFTP (RFC 1350) exposure with PSK + HMAC-SHA256 + ChaCha20, but security depends on key management. No warranty, as-is, educational prototype.
