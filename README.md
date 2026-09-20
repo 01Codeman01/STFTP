@@ -1,5 +1,8 @@
 ![STFTP Global Deployment](banner-global.png)
 ![STFTP Infographic](infografic.jpeg)
+**Author:** Abel Fregoso - San Antonio College - Information Assurance and Cybersecurity  
+**Started:** September 20, 2026  
+**License:** MIT
 # STFTP - Secure TFTP Protocol
 ### Industrial IoT Secure OTA - Global Deployment Ready
 
@@ -7,9 +10,6 @@
 
 Secure lightweight extension of TFTP (RFC 1350) that adds pre-shared-key authentication.
 
-**Author:** Abel Fregoso - San Antonio College - Information Assurance and Cybersecurity  
-**Started:** September 20, 2026  
-**License:** MIT
 
 ## Problem
 TFTP runs on UDP 69 with zero authentication and sends everything in cleartext. In lab captures (Wireshark) you can see running-config and credentials exposed.
