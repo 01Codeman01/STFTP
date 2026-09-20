@@ -3,6 +3,7 @@
 **Author:** Abel Fregoso - San Antonio College - Information Assurance and Cybersecurity  
 **Started:** September 20, 2026  
 **License:** MIT
+
 This repo is the original proof of authorship.
 # STFTP - Secure TFTP Protocol
 ### Industrial IoT Secure OTA - Global Deployment Ready
