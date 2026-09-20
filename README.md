@@ -1,4 +1,5 @@
 ![STFTP Global Deployment](banner-global.png)
+![STFTP Infographic](infographic.jpeg)
 # STFTP - Secure TFTP Protocol
 ### Industrial IoT Secure OTA - Global Deployment Ready
 
