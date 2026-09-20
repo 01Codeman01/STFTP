@@ -32,6 +32,18 @@ Does NOT protect against: compromised PSK, physical access, weak RNG, DoS
 - [ ] Wireshark confirms no cleartext
 - [ ] Firewall restricts UDP port
 
+# Security Policy
+
+## Reporting a Vulnerability
+Please do NOT open a public issue.
+
+Use GitHub's private reporting:
+**Security tab > Report a vulnerability** in this repo
+
+Or contact via GitHub: [@01Codeman01](https://github.com/01Codeman01)
+
+This is research prototype - not production-hardened. No warranty, as-is.
+
 ## Reporting a Vulnerability
 DO NOT open a public issue.
 Use GitHub Security Advisories (private). Response within 48h.
