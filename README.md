@@ -3,6 +3,7 @@
 **Author:** Abel Fregoso - San Antonio College - Information Assurance and Cybersecurity  
 **Started:** September 20, 2026  
 **License:** MIT
+This repo is the original proof of authorship.
 # STFTP - Secure TFTP Protocol
 ### Industrial IoT Secure OTA - Global Deployment Ready
 
@@ -26,8 +27,6 @@ See `config.example.json` for configuration template. Never commit real keys - u
 ## Security
 See `SECURITY.md` for reporting vulnerabilities.
 
-
-This repo is the original proof of authorship.
 
 Secure drop-in replacement for TFTP (RFC 1350) with PSK-AES-GCM + Nonce + SHA256. Keeps UDP simplicity for factories, dams, and IoT firmware OTA that cannot fail.
 
