@@ -3,6 +3,32 @@
 # STFTP - Secure TFTP Protocol
 ### Industrial IoT Secure OTA - Global Deployment Ready
 
+# STFTP - Secure Trivial File Transfer Protocol
+
+Secure lightweight extension of TFTP (RFC 1350) that adds pre-shared-key authentication.
+
+**Author:** Abel Fregoso - San Antonio College - Information Assurance and Cybersecurity  
+**Started:** September 20, 2026  
+**License:** MIT
+
+## Problem
+TFTP runs on UDP 69 with zero authentication and sends everything in cleartext. In lab captures (Wireshark) you can see running-config and credentials exposed.
+
+## Solution
+STFTP keeps the same RRQ/WRQ/DATA/ACK flow, but adds:
+- HMAC-SHA256 for authentication
+- ChaCha20 encryption with 32-byte PSK
+- Backward compatible - falls back to legacy TFTP if no key
+
+## How to use
+See `config.example.ini` for configuration template. Never commit real keys - use `.gitignore`.
+
+## Security
+See `SECURITY.md` for reporting vulnerabilities.
+
+
+This repo is the original proof of authorship.
+
 Secure drop-in replacement for TFTP (RFC 1350) with PSK-AES-GCM + Nonce + SHA256. Keeps UDP simplicity for factories, dams, and IoT firmware OTA that cannot fail.
 
 🔒 **Verified Proof - 20/09/2026**
