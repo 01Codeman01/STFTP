@@ -21,7 +21,7 @@ STFTP keeps the same RRQ/WRQ/DATA/ACK flow, but adds:
 - Backward compatible - falls back to legacy TFTP if no key
 
 ## How to use
-See `config.example.ini` for configuration template. Never commit real keys - use `.gitignore`.
+See `config.example.json` for configuration template. Never commit real keys - use `.gitignore`.
 
 ## Security
 See `SECURITY.md` for reporting vulnerabilities.
