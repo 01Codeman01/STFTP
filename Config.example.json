@@ -1,0 +1,8 @@
+{
+  "psk_description": "32 bytes / 64 hex chars - Generate with: openssl rand -hex 32",
+  "psk_hex": "REPLACE_WITH_YOUR_openssl_rand_-hex_32_OUTPUT_HERE",
+  "nonce_persist_path": "/nvs/stftp_counter",
+  "server_ip": "192.168.1.100",
+  "server_port": 6969,
+  "note": "DO NOT COMMIT WITH REAL KEY - Copy to config.json and keep private"
+}
