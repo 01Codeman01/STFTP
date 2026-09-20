@@ -1,0 +1,37 @@
+# Secrets - NUNCA subir
+config.json
+config.prod.json
+*.key
+*.pem
+*.p12
+*.psk
+psk.txt
+keys.txt
+.env
+secrets.json
+
+# ESP32 / C build
+build/
+sdkconfig
+*.bin
+*.elf
+.pio/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+*.pcap
+*.pcapng
+test_output/
+
+!config.example.json
